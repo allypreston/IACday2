@@ -8,5 +8,5 @@ package "nginx"
 service "nginx" do
   action [:enable, :start]
 end
-
-include_recipe "nodejs-6.0.0"
+package "nodejs"
+#include_recipe "nodejs-6.0.0"
